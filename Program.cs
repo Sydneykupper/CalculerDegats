@@ -17,6 +17,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        int degats = CalculateWeaponDamage(40, 15);
+
+        Console.WriteLine("Dégâts infligés : " + degats);
+
+        int degatsBonus = CalculateWeaponDamage(60, 25);
+
+        Console.WriteLine("Dégâts avec bonus : " + degatsBonus);
+    }
+
+    static int CalculateWeaponDamage(int weaponPower, int bonus)
+    {
+        return weaponPower + bonus;
     }
 }
